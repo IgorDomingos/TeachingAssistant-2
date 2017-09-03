@@ -11,21 +11,13 @@ import { AlunoService } from './aluno.service';
 })
 export class AppComponent {
    aluno: Aluno = {nome: "", cpf: "", email: ""};
-<<<<<<< HEAD
-}
-
-export class Aluno {
-  nome!: string;
-  cpf!: string;
-  email!: string;
-}
-=======
    alunoService = new AlunoService();
+   alunos: Aluno[] = [];
 
    gravar(a: Aluno): void {
      this.alunoService.gravar(a);
+     this.alunos.push(a);
      this.aluno = {nome: "", cpf: "", email: ""};
   }
 }
 
->>>>>>> SaaS1
