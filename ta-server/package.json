@@ -17,4 +17,8 @@
   "devDependencies": {
     "typescript": "~3.5.3"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 121fa91 (versao toy do servidor)
