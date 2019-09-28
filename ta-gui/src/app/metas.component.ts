@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgModule } from '@angular/core';
 
-import { Aluno } from 'c:/TA/TeachingAssistant-2/common/aluno';
+import { Aluno } from '../../../common/aluno';
 import { AlunoService } from './aluno.service';
 
   @Component({
