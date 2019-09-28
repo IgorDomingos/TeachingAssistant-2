@@ -6,30 +6,15 @@ import {CadastroDeAlunos} from './cadastrodealunos';
 
 var taserver = express();
 
-<<<<<<< HEAD
-var alunos = [{nome:'Paulo',
-              cpf:'683',
-              email:'phmb@cin.br',
-              metas:{'requisitos':'MA'}},
-              {nome:'Mariana',
-              cpf:'456',
-              email:'@mcb@cin.br',
-              metas:{'requisitos':'MPA'}}];
-=======
 var alunos: CadastroDeAlunos = new CadastroDeAlunos();
 
 taserver.use(bodyParser.json());
->>>>>>> e54eeca (versao inicial do servidor, apos extracao de aluno para area comum)
 
-taserver.get('/alunos', function (req, res) {
+taserver.get('/alunos', function (req: express.Request, res: express.Response) {
   var aluno: string = JSON.stringify(alunos.getAlunos());
   res.send(aluno);
 })
 
-<<<<<<< HEAD
-taserver.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-=======
 taserver.post('/aluno', function (req: express.Request, res: express.Response) {
   var aluno: Aluno = <Aluno> req.body; //verificar se é mesmo Aluno!
   aluno = alunos.criar(aluno);
@@ -52,5 +37,4 @@ taserver.put('/aluno', function (req: express.Request, res: express.Response) {
 
 taserver.listen(3000, function () {
   console.log('Example app listening on port 3000!')
->>>>>>> e54eeca (versao inicial do servidor, apos extracao de aluno para area comum)
 })
