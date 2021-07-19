@@ -20,4 +20,3 @@ export class AppComponent {
      this.aluno = {nome: "", cpf: "", email: ""};
   }
 }
-
