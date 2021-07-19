@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NgModule } from '@angular/core';
 
+import { Aluno } from './aluno';
+import { AlunoService } from './aluno.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +11,7 @@ import { NgModule } from '@angular/core';
 })
 export class AppComponent {
    aluno: Aluno = {nome: "", cpf: "", email: ""};
+<<<<<<< HEAD
 }
 
 export class Aluno {
@@ -15,3 +19,13 @@ export class Aluno {
   cpf!: string;
   email!: string;
 }
+=======
+   alunoService = new AlunoService();
+
+   gravar(a: Aluno): void {
+     this.alunoService.gravar(a);
+     this.aluno = {nome: "", cpf: "", email: ""};
+  }
+}
+
+>>>>>>> SaaS1
