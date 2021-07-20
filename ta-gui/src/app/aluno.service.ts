@@ -1,5 +1,3 @@
-import { variable } from '@angular/compiler/src/output/output_ast';
-import { kStringMaxLength } from 'buffer';
 import { Aluno } from './aluno';
 
 export class AlunoService {
