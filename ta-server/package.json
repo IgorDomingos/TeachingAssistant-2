@@ -6,15 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "./node_modules/typescript/bin/tsc",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "start": "npx nodemon --exec ts-node --files ta-server.ts"
-=======
-    "start": "npm run tsc && node compiledCode/ta-server.js"
->>>>>>> 121fa91 (versao toy do servidor)
-=======
-    "start": "npx nodemon --exec ts-node --files ta-server.ts"
->>>>>>> 0957f24 (servidor executando com nodemon e ts-node)
   },
   "author": "Paulo Borba",
   "license": "MIT",
@@ -23,16 +15,8 @@
     "@types/express": "^4.0.37"
   },
   "devDependencies": {
-<<<<<<< HEAD
-<<<<<<< HEAD
     "nodemon": "^2.0.7",
     "ts-node": "^10.0.0",
-=======
->>>>>>> 121fa91 (versao toy do servidor)
-=======
-    "nodemon": "^2.0.7",
-    "ts-node": "^10.0.0",
->>>>>>> 0957f24 (servidor executando com nodemon e ts-node)
     "typescript": "~3.5.3"
   }
 }
