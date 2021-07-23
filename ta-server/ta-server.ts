@@ -5,7 +5,18 @@ import {CadastroDeAlunos} from './cadastrodealunos';
 
 var taserver = express();
 
+<<<<<<< HEAD
 var alunos: CadastroDeAlunos = new CadastroDeAlunos();
+=======
+var alunos = [{nome:'Paulo',
+              cpf:'683',
+              email:'phmb@cin.br',
+              metas:{'requisitos':'MA'}},
+              {nome:'Mariana',
+              cpf:'456',
+              email:'@mcb@cin.br',
+              metas:{'requisitos':'MPA'}}];
+>>>>>>> b9fccd7 (Servidor executando com nodemon e ts-node (erros corrigidos))
 
 taserver.use(bodyParser.json());
 
