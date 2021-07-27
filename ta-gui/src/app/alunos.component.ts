@@ -12,6 +12,7 @@ import { AlunoService } from './aluno.service';
     aluno: Aluno = new Aluno();
     alunos: Aluno[] = [];
     cpfduplicado: boolean = false;
+    loginduplicado: boolean = false;
 
     constructor(private alunoService: AlunoService) {}
 
