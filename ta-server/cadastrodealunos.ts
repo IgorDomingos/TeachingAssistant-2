@@ -29,4 +29,12 @@ export class CadastroDeAlunos {
     getAlunos(): Aluno[] {
      return this.alunos;
    }
+
+   remover(cpf: string): boolean {
+    var result = this.alunos.findIndex(a => a.cpf == cpf)!;
+
+    if (result == -1) return false
+    this.alunos.splice(result, 1)
+    return true;
+  }
 }
